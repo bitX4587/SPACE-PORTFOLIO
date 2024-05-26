@@ -1,0 +1,858 @@
+* {
+    box-sizing: border-box;
+    margin: 0px;
+}
+
+/* 
+Animations
+*/
+
+.ePortfolio:hover {
+    color: darkorange;
+}
+
+.ePortfolio {
+    transition: color .8s;
+}
+
+.navbar a:hover {
+    color: darkorange;
+}
+
+body {
+    background-color: black;
+    margin-top: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+    overflow-x: hidden;
+}
+
+.sun-image {
+    position: absolute;
+    top: -250px;
+    left: -250px;
+    z-index: -1;
+    width: 700px;
+    opacity: 0.5;
+}
+
+.moon-image {
+    position: absolute;
+    top: 300px;
+    left: 700px;
+    z-index: -1;
+    width: 1500px;
+    opacity: 0.5;
+}
+
+.mercury-image {
+    position: absolute;
+    top: 450px;
+    left: -250px;
+    z-index: 1;
+    width: 750px;
+    opacity: 0.5;
+}
+
+header {
+    display: inline-block;
+    width: 50%;
+    height: 130px;
+}
+
+header .logo {
+    position: relative;
+    top: 100px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 100%;
+}
+
+.logo a {
+    text-decoration: none;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 25px;
+    color: white;   
+    z-index: 1;
+}
+
+.logo .image-one {
+    width: 50px;
+    height: auto;
+    position: absolute;
+    top: -10px;
+    right: 280px;
+}
+
+.navbar {
+    position: sticky;
+    top: 0px;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    margin-top: 44px;
+    float: right;
+    width: 50%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    background-color: black;
+    border-radius: 10px;
+}
+
+.navbar a {
+    text-decoration: none;
+    color: white;
+    font-size: 30px;
+    font-family: Arial, Helvetica, sans-serif;
+    transition: color .5s;
+}
+
+main {
+    color: white;
+    height: 4000px;
+    margin: 20px;
+}
+
+aside {
+    float: left;
+    width: 50%;
+    height: 20000px;
+}
+
+.my-info{
+    position: sticky;
+    top: 0px;
+    margin-top: 50px;
+    padding-top: 200px;
+    padding-left: 50px;
+    word-spacing: 2px;
+    letter-spacing: 1px;
+    z-index: 1;
+}
+
+.my-info-two {
+    position: sticky;
+    top: 0px;
+    margin-top: 600px;
+    padding-top: 300px;
+    padding-left: 50px;
+    word-spacing: 2px;
+    letter-spacing: 1px;
+    font-size: 20px;
+}
+
+.my-info-two p {
+    background-color: black;
+}
+
+.my-info-three {
+    position: sticky;
+    top: 0px;
+    margin-top: -360px;
+    padding-top: 430px;
+    padding-left: 50px;
+    word-spacing: 2px;
+    letter-spacing: 1px;
+    z-index: 1;
+    font-size: 15px;
+}
+
+.my-info h1 {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 50px;
+}
+
+.my-info span {
+    color: orange;
+    cursor: pointer;
+}
+
+.my-info p {
+    font-size: 20px;
+}
+
+article {
+    float: left;
+    width: 50%;
+    height: 20000px;
+    z-index: -1;
+}
+
+.my-image {
+    padding: 0px 0px 60px 50px;
+    z-index: 1;
+}
+
+.my-image .me {
+    width: 500px;
+    border-radius: 50px;
+    z-index: 1;
+    cursor: pointer;
+}
+
+.news-article {
+    width: 100%;
+    padding: 20px 50px 20px 50px;
+    z-index: 1;
+}
+
+footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    background-color: gray;
+    width: 100%;
+}
+
+@media screen and (max-width: 1325px) {
+    
+    .sun-image {
+        position: absolute;
+        top: -250px;
+        left: -300px;
+        z-index: -1;
+        width: 700px;
+        opacity: 0.5;
+    }
+    
+    .moon-image {
+        display: none;
+    }
+    
+    .mercury-image {
+        position: absolute;
+        top: 510px;
+        left: -250px;
+        z-index: 1;
+        width: 750px;
+        opacity: 0.5;
+    }
+
+    .logo .image-one {
+        width: 50px;
+        height: auto;
+        position: absolute;
+        top: -10px;
+        right: 230px;
+    }
+
+    main {
+        color: white;
+        height: 20000px;
+        margin: 20px;
+    }    
+
+    .my-info-two {
+        position: sticky;
+        top: 0px;
+        margin-top: 600px;
+        padding-top: 300px;
+        padding-left: 50px;
+        word-spacing: 2px;
+        letter-spacing: 1px;
+        z-index: 1;
+        font-size: 20px;
+    }
+
+}
+
+@media screen and (max-width: 1180px) {
+    
+    .sun-image {
+        position: absolute;
+        top: -250px;
+        left: -300px;
+        z-index: -1;
+        width: 650px;
+        opacity: 0.5;
+    }
+
+    .logo .image-one {
+        width: 50px;
+        height: auto;
+        position: absolute;
+        top: -10px;
+        right: 190px;
+    }
+    
+    .mercury-image {
+        position: absolute;
+        top: 550px;
+        left: -250px;
+        z-index: 1;
+        width: 750px;
+        opacity: 0.5;
+    }
+    
+    .my-image {
+        padding: 0px 0px 60px 20px;
+        z-index: 1;
+    }
+
+    .my-image .me {
+        width: 450px;
+        border-radius: 50px;
+        z-index: 1;
+    }
+
+    .news-article {
+        width: 100%;
+        padding: 20px 50px 20px 20px;
+        z-index: 1;
+    }
+
+    main {
+        color: white;
+        height: 20000px;
+        margin: 20px;
+    }  
+
+    .my-info-two {
+        position: sticky;
+        top: 0px;
+        margin-top: 600px;
+        padding-top: 360px;
+        padding-left: 50px;
+        word-spacing: 2px;
+        letter-spacing: 1px;
+        z-index: 1;
+        font-size: 20px;
+    }
+
+}
+
+@media screen and (max-width: 1000px) {
+    
+    .logo .image-one {
+        width: 50px;
+        height: auto;
+        position: absolute;
+        top: -10px;
+        right: 150px;
+    }
+
+    .sun-image {
+        position: absolute;
+        top: -250px;
+        left: -330px;
+        z-index: -1;
+        width: 650px;
+        opacity: 0.5;
+    }
+    
+    .moon-image {
+        position: absolute;
+        top: 500px;
+        left: 600px;
+        z-index: -1;
+        width: 1200px;
+        opacity: 0.5;
+    }
+    
+    .mercury-image {
+        position: absolute;
+        top: 570px;
+        left: -250px;
+        z-index: 1;
+        width: 750px;
+        opacity: 0.5;
+    }
+    
+    .my-image {
+        padding: 0px 0px 60px 20px;
+        z-index: 1;
+    }
+
+    .my-image .me {
+        width: 400px;
+        border-radius: 50px;
+        z-index: 1;
+    }
+
+    .news-article {
+        width: 100%;
+        padding: 20px 50px 20px 20px;
+        z-index: 1;
+    }
+
+    main {
+        color: white;
+        height: 20000px;
+        margin: 20px;
+    }  
+
+    .my-info-two {
+        position: sticky;
+        top: 0px;
+        margin-top: 600px;
+        padding-top: 380px;
+        padding-left: 50px;
+        word-spacing: 2px;
+        letter-spacing: 1px;
+        z-index: 1;
+        font-size: 20px;
+    }
+
+}
+
+@media screen and (max-width: 870px) {
+
+    .logo .image-one {
+        width: 50px;
+        height: auto;
+        position: absolute;
+        top: -10px;
+        right: 110px;
+    }
+    
+    .sun-image {
+        position: absolute;
+        top: -250px;
+        left: -330px;
+        z-index: -1;
+        width: 650px;
+        opacity: 0.5;
+    }
+    
+    .moon-image {
+        position: absolute;
+        top: 500px;
+        left: 600px;
+        z-index: -1;
+        width: 1200px;
+        opacity: 0.5;
+    }
+    
+    .mercury-image {
+        position: absolute;
+        top: 600px;
+        left: -250px;
+        z-index: 1;
+        width: 750px;
+        opacity: 0.5;
+    }
+    
+    .my-image {
+        padding: 0px 0px 60px 20px;
+        z-index: 1;
+    }
+
+    .my-image .me {
+        width: 350px;
+        border-radius: 50px;
+        z-index: 1;
+    }
+
+    .news-article {
+        width: 100%;
+        padding: 20px 50px 20px 20px;
+        z-index: 1;
+    }
+
+    main {
+        color: white;
+        height: 20000px;
+        margin: 20px;
+    }  
+
+    .my-info-two {
+        position: sticky;
+        top: 0px;
+        margin-top: 600px;
+        padding-top: 390px;
+        padding-left: 50px;
+        word-spacing: 2px;
+        letter-spacing: 1px;
+        z-index: 1;
+        font-size: 20px;
+    }
+
+}
+
+@media screen and (max-width: 800px) {
+    
+    .logo .image-one {
+        width: 50px;
+        height: auto;
+        position: absolute;
+        top: -10px;
+        right: 90px;
+    }
+
+    .sun-image {
+        position: absolute;
+        top: -250px;
+        left: -380px;
+        z-index: -1;
+        width: 650px;
+        opacity: 0.5;
+    }
+    
+    .moon-image {
+        position: absolute;
+        top: 500px;
+        left: 600px;
+        z-index: -1;
+        width: 1200px;
+        opacity: 0.5;
+    }
+    
+    .mercury-image {
+        position: absolute;
+        top: 560px;
+        left: -300px;
+        z-index: 1;
+        width: 750px;
+        opacity: 0.5;
+    }
+    
+    header {
+        display: inline-block;
+        width: 50%;
+        height: 80px;
+    }
+
+    .navbar {
+        position: sticky;
+        top: 0px;
+        padding-top: 50px;
+        padding-bottom: 50px;
+        margin-top: 44px;
+        float: right;
+        width: 50%;
+        display: none;
+        flex-direction: row;
+        justify-content: space-around;
+        background-color: black;
+        border-radius: 10px;
+        z-index: 1;
+    }
+    
+    .navbar a {
+        text-decoration: none;
+        color: white;
+        font-size: 30px;
+        font-family: Arial, Helvetica, sans-serif   ;
+    }    
+
+    .my-image {
+        padding: 0px 0px 60px 20px;
+        z-index: 1;
+    }
+
+    .my-image .me {
+        width: 300px;
+        border-radius: 50px;
+        z-index: 1;
+    }
+
+    .news-article {
+        width: 100%;
+        padding: 20px 50px 20px 20px;
+        z-index: 1;
+    }
+
+    main {
+        color: white;
+        height: 20000px;
+        margin: 20px;
+    }  
+
+    .my-info-two {
+        position: sticky;
+        top: 0px;
+        margin-top: 600px;
+        padding-top: 440px;
+        padding-left: 50px;
+        word-spacing: 2px;
+        letter-spacing: 1px;
+        z-index: 1;
+        font-size: 20px;
+    }
+
+}
+
+@media screen and (max-width: 700px) {
+    
+    .logo .image-one {
+        width: 50px;
+        height: auto;
+        position: absolute;
+        top: -10px;
+        right: 70px;
+    }
+
+    .sun-image {
+        position: absolute;
+        top: -250px;
+        left: -400px;
+        z-index: -1;
+        width: 650px;
+        opacity: 0.5;
+    }
+    
+    .moon-image {
+        position: absolute;
+        top: 500px;
+        left: 600px;
+        z-index: -1;
+        width: 1200px;
+        opacity: 0.5;
+    }
+    
+    .mercury-image {
+        position: absolute;
+        top: 560px;
+        left: -350px;
+        z-index: 1;
+        width: 750px;
+        opacity: 0.5;
+    }
+
+    main {
+        color: white;
+        height: 20000px;
+        margin: 20px;
+    }
+    
+    .my-image {
+        padding: 0px 0px 60px 20px;
+        z-index: 1;
+    }
+
+    .my-image .me {
+        width: 250px;
+        border-radius: 50px;
+        z-index: 1;
+    }
+
+    .my-info-two {
+        position: sticky;
+        top: 0px;
+        margin-top: 600px;
+        padding-top: 450px;
+        padding-left: 50px;
+        word-spacing: 2px;
+        letter-spacing: 1px;
+        z-index: 1;
+        font-size: 20px;
+    }
+
+
+}
+
+@media screen and (max-width: 600px) {
+    
+    .logo .image-one {
+        width: 50px;
+        height: auto;
+        position: absolute;
+        top: -10px;
+        right: 40px;
+    }
+
+    .sun-image {
+        position: absolute;
+        top: -250px;
+        left: -450px;
+        z-index: -1;
+        width: 650px;
+        opacity: 0.5;
+    }
+    
+    .moon-image {
+        position: absolute;
+        top: 500px;
+        left: 600px;
+        z-index: -1;
+        width: 1200px;
+        opacity: 0.5;
+    }
+    
+    .mercury-image {
+        position: absolute;
+        top: 560px;
+        left: -500px;
+        z-index: 1;
+        width: 750px;
+        opacity: 0.5;
+    }
+
+    main {
+        color: white;
+        height: 20000px;
+        margin: 20px;
+    } 
+    
+    .my-image {
+        padding: 0px 0px 60px 20px;
+        z-index: 1;
+    }
+
+    .my-image .me {
+        width: 200px;
+        border-radius: 50px;
+        z-index: 1;
+    }
+
+    .my-info-two {
+        position: sticky;
+        top: 0px;
+        margin-top: 600px;
+        padding-top: 450px;
+        padding-left: 50px;
+        word-spacing: 2px;
+        letter-spacing: 1px;
+        z-index: 1;
+        font-size: 20px;
+    }
+
+}
+
+@media screen and (max-width: 520px) {
+
+    .logo .image-one {
+        width: 50px;
+        height: auto;
+        position: absolute;
+        top: -10px;
+        right: 20px;
+    }
+    
+    .sun-image {
+        position: absolute;
+        top: -250px;
+        left: -450px;
+        z-index: -1;
+        width: 650px;
+        opacity: 0.5;
+    }
+    
+    .moon-image {
+        position: absolute;
+        top: 500px;
+        left: 100px;
+        z-index: -1;
+        width: 1200px;
+        opacity: 0.5;
+    }
+    
+    .mercury-image {
+        position: absolute;
+        top: 560px;
+        left: -500px;
+        z-index: 1;
+        width: 750px;
+        opacity: 0.5;
+    }
+
+    .news-article {
+        width: 100%;
+        padding: 20px 0px 20px 80px;
+        z-index: 1;
+    }
+
+    main {
+        color: white;
+        height: 20000px;
+        margin: 20px;
+    }  
+
+    .my-image {
+        padding: 0px 0px 20px 80px;
+        z-index: 1;
+    }
+
+    .my-image .me {
+        width: 150px;
+        border-radius: 50px;
+        z-index: 1;
+    }
+
+    .my-info-two {
+        position: sticky;
+        top: 0px;
+        margin-top: 600px;
+        padding-top: 520px;
+        padding-left: 50px;
+        word-spacing: 2px;
+        letter-spacing: 1px;
+        z-index: 1;
+        font-size: 20px;
+    }
+
+}
+
+@media screen and (max-width: 420px) {
+
+    .logo .image-one {
+        width: 50px;
+        height: auto;
+        position: absolute;
+        top: -10px;
+        right: 0px;
+    }
+    
+    .sun-image {
+        position: absolute;
+        top: -250px;
+        left: -450px;
+        z-index: -1;
+        width: 650px;
+        opacity: 0.5;
+    }
+    
+    .moon-image {
+        position: absolute;
+        top: 500px;
+        left: 100px;
+        z-index: -1;
+        width: 1200px;
+        opacity: 0.5;
+    }
+    
+    .mercury-image {
+        position: absolute;
+        top: 560px;
+        left: -500px;
+        z-index: 1;
+        width: 750px;
+        opacity: 0.5;
+    }
+
+    .news-article {
+        width: 100%;
+        padding: 20px 0px 20px 80px;
+        z-index: 1;
+    }
+
+    main {
+        color: white;
+        height: 20000px;
+        margin: 20px;
+    }  
+
+    .my-image {
+        padding: 0px 0px 20px 80px;
+        z-index: 1;
+    }
+
+    .my-image .me {
+        width: 150px;
+        border-radius: 50px;
+        z-index: 1;
+    }
+
+    .my-info-two {
+        position: sticky;
+        top: 0px;
+        margin-top: 600px;
+        padding-top: 570px;
+        padding-left: 50px;
+        word-spacing: 2px;
+        letter-spacing: 1px;
+        z-index: 1;
+        font-size: 20px;
+    }
+
+}
