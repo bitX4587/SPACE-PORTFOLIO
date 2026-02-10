@@ -5,6 +5,7 @@ A modern, fully responsive space-themed portfolio website with stunning animatio
 ## ✨ Features
 
 ### Design Improvements
+
 - **Modern Space Theme**: Beautiful starfield animation with floating planets
 - **Gradient Accents**: Eye-catching color gradients throughout
 - **Custom Fonts**: Orbitron for headings, Space Grotesk for body text
@@ -12,12 +13,14 @@ A modern, fully responsive space-themed portfolio website with stunning animatio
 - **Smooth Animations**: Fade-in effects, hover states, and parallax scrolling
 
 ### Responsive Design
+
 - **Mobile-First**: Works perfectly on all devices (phones, tablets, desktops)
 - **Hamburger Menu**: Collapsible navigation for mobile devices
 - **Adaptive Layouts**: Grid layouts that adjust to screen size
 - **Optimized Images**: Responsive image sizing
 
 ### Sections
+
 1. **Hero Section**: Eye-catching introduction with profile image and call-to-action buttons
 2. **About**: Brief introduction about yourself
 3. **Skills**: Interactive skill cards with icons and descriptions
@@ -25,6 +28,7 @@ A modern, fully responsive space-themed portfolio website with stunning animatio
 5. **Contact**: Contact information and references in an organized layout
 
 ### Interactive Elements
+
 - **Smooth Scrolling**: Click navigation links for smooth page transitions
 - **Hover Effects**: Cards lift and glow on hover
 - **Mobile Menu**: Animated hamburger menu for mobile devices
@@ -68,7 +72,9 @@ A modern, fully responsive space-themed portfolio website with stunning animatio
 ## 🛠️ Customization Tips
 
 ### Change Colors
+
 Edit the CSS variables in `style.css` (lines 17-23):
+
 ```css
 --primary-color: #00d9ff;
 --secondary-color: #ff6b35;
@@ -76,11 +82,13 @@ Edit the CSS variables in `style.css` (lines 17-23):
 ```
 
 ### Update Content
+
 - Edit text directly in `index.html`
 - Replace your profile image in the `img` folder
 - Update contact information in the Contact section
 
 ### Modify Animations
+
 - Speed up/slow down animations by adjusting timing in `style.css`
 - Disable specific animations by commenting out the CSS
 
@@ -104,6 +112,7 @@ Edit the CSS variables in `style.css` (lines 17-23):
 ## 💡 Browser Compatibility
 
 Works on all modern browsers:
+
 - Chrome (recommended)
 - Firefox
 - Safari
